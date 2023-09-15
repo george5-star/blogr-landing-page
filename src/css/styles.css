@@ -1,0 +1,143 @@
+/*
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
+- Weights: 300, 600
+
+- Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
+- weights: 400, 500, 700
+
+*/
+
+:root {
+  --clr-primary--light-red-cta-text: hsl(356, 100%, 66%);
+  --clr-primary--very-light-red-cta-hover-bg: hsl(355, 100%, 74%);
+  --clr-primary--very-dark-blue-headings: hsl(208, 49%, 24%);
+
+  --clr-neutral--white-text: hsl(0, 0%, 100%);
+  --clr-neutral--grayish-blue-footer-text: hsl(240, 2%, 79%);
+  --clr-neutral--very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+  --clr-neutral--very-dark-black-blue-footer-bg: hsl(240, 10%, 16%);
+
+  --gradient-clr-intro-1: hsl(13, 100%, 72%);
+  --gradient-clr-intro-2: hsl(353, 100%, 62%);
+
+  --gradient-clr-body-1: hsl(237, 17%, 21%);
+  --gradient-clr-body-2: hsl(237, 23%, 32%);
+
+  --bg-gradient-intro: linear-gradient(
+    to right,
+    var(--gradient-clr-intro-1),
+    var(--gradient-clr-intro-2)
+  );
+
+  --bg-gradient-body: linear-gradient(
+    to right,
+    var(--gradient-clr-body-1),
+    var(--gradient-clr-body-2)
+  );
+
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0.75em 1.5em;
+  border-radius: 100vmax;
+  border: none;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  height: 100%;
+  text-align: center;
+}
+
+header {
+  min-height: 70vh;
+  background: var(--bg-gradient-intro);
+  border-bottom-left-radius: 8%;
+}
+
+.container {
+  width: min(70rem, 95%);
+  margin-inline: auto;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container {
+  min-height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__nav,
+.btn-group {
+  display: none;
+}
+
+.nav-sublist {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .header__nav,
+  .btn-group {
+    display: block;
+  }
+
+  .hamburger,
+  .mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    margin-inline: 5em auto;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .nav-list__item {
+    margin-inline-start: 1em;
+  }
+
+  .nav-link {
+    color: var(--clr-neutral--white-text);
+  }
+}
