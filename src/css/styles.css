@@ -300,6 +300,7 @@ header .container {
   }
 
   .mobile-wrapper {
+    width: 100%;
     display: flex;
   }
 
@@ -324,7 +325,7 @@ header .container {
 
   nav {
     display: flex;
-    margin-inline: 5em auto;
+    margin-inline: 2em auto;
   }
 
   .nav-list {
