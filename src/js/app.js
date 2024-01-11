@@ -20,8 +20,9 @@ closeEl.addEventListener("click", () => {
 navLists.forEach((navListItem) => {
   navListItem.addEventListener("click", function (e) {
     const navSubList = e.target.parentElement.children[1];
-    const arrow = e.target.children[0];
-    console.log(arrow);
+    const arrowLight = e.target.children[0].children[0];
+    const arrow = e.target.children[0].children[1];
+    arrowLight.classList.toggle("rotate");
     arrow.classList.toggle("rotate");
     navSubList.classList.toggle("show");
   });
