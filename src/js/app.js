@@ -20,6 +20,9 @@ closeEl.addEventListener("click", () => {
 navLists.forEach((navListItem) => {
   navListItem.addEventListener("click", function (e) {
     const navSubList = e.target.parentElement.children[1];
+    const arrow = e.target.children[0];
+    console.log(arrow);
+    arrow.classList.toggle("rotate");
     navSubList.classList.toggle("show");
   });
 });

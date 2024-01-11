@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Project Screenshot](./screenshot.jpg)
+![Project Screenshot](./src/images/Project-Screenshot.png)
 
 ## My process
 
@@ -38,12 +38,11 @@ Users should be able to:
 
 ### What I learned
 
+I learned about DOM manipulation, nav toggle, responsive design etc.
+
 ### Continued development
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+DOM manipulation and Animations.
 
 ## Author
 
